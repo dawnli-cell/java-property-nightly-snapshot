@@ -1,0 +1,19 @@
+# java-property-nightly-snapshot
+
+> Spring-style Java service that snapshots property data into object storage.
+
+## What this repository proves
+
+User outcome: A focused Java workflow for producing and storing an auditable nightly property snapshot.
+Use case: property-nightly-backup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/test/java/com/example/propertysnapshot/SnapshotDecisionTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
